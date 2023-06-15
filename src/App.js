@@ -4,17 +4,20 @@ import ManPage from "./pages/ManPage";
 import WomanPage from "./pages/WomanPage";
 import CommonPage from "./pages/CommonPage";
 import AccessoriesPage from "./pages/AccessoriesPage";
+import Layout from "./pages/Layout";
 
 function App() {
   return (
     <div className="App">
-      <Routes>
-        <Route path="/" element={<LogoPage />} />
-        <Route path="/man" element={<ManPage />} />
-        <Route path="/woman" element={<WomanPage />} />
-        <Route path="/common" element={<CommonPage />} />
-        <Route path="/accessories" element={<AccessoriesPage />} />
-      </Routes>
+      <Layout>
+        <Routes>
+          <Route path="/" element={<LogoPage />} />
+          <Route path="/man" element={<ManPage />} />
+          <Route path="/woman" element={<WomanPage />} />
+          <Route path="/common" element={<CommonPage />} />
+          <Route path="/accessories" element={<AccessoriesPage />} />
+        </Routes>
+      </Layout>
     </div>
   );
 }

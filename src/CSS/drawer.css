@@ -1,0 +1,30 @@
+.animation {
+  transition: all ease 1.5s 0s;
+  width: 20px;
+}
+
+.none_border {
+  display: none;
+  transition: all ease 1.5s;
+}
+
+.top_deg_border {
+  transform: rotate(50deg) translateY(2px);
+  transition: all ease 1.5s;
+  border: 2px solid black;
+  width: 22px;
+}
+
+.bottom_deg_border {
+  transform: rotate(-50deg) translateY(-2px);
+  transition: all ease 1.5s;
+  border: 2px solid black;
+  width: 22px;
+}
+
+.drawer_menu_content {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 100%;
+}
