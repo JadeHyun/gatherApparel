@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Header from "./Header";
 import Category from "./../components/Category";
 
-const dummeData = [
+const dummyData = [
   {
     id: 1,
     type: "남자반팔티",
@@ -127,7 +127,7 @@ const dummeData = [
 const categoryList = ["남자반팔티", "남자긴팔티", "여자반팔티", "여자긴팔티"];
 
 export default function ManPage() {
-  const [currentList, setCurrentList] = useState(dummeData);
+  const [currentList, setCurrentList] = useState(dummyData);
 
   return (
     <section>
@@ -136,7 +136,7 @@ export default function ManPage() {
         Welcome to GyuGa :)
       </p>
       <Category
-        dummeData={dummeData}
+        dummyData={dummyData}
         setCurrentList={setCurrentList}
         categoryList={categoryList}
       />

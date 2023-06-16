@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React from "react";
 import "../CSS/drawer.css";
 
 export default function DrawerMenu({ setIsMenu, isMenu }) {

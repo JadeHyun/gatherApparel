@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-export default function Category({ categoryList, setCurrentList, dummeData }) {
+export default function Category({ categoryList, setCurrentList, dummyData }) {
   const [haveCategory, setHaveCategory] = useState();
 
   function filterList(list, category) {
@@ -8,8 +8,8 @@ export default function Category({ categoryList, setCurrentList, dummeData }) {
   }
 
   useEffect(() => {
-    haveCategory && setCurrentList(filterList(dummeData, haveCategory));
-  }, [haveCategory]);
+    haveCategory && setCurrentList(filterList(dummyData, haveCategory));
+  }, [haveCategory, setCurrentList]);
 
   return (
     <div className="flex flex-wrap justify-start items-center">
